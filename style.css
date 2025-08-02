@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: 5% auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #b58900;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.info {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.info p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.logo-inline {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Музыка түймесі стилі */
+.audio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b58900;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.audio-button:hover {
+    background-color: #a67c00;
+}
+
+.audio-button.playing {
+    background-color: #4CAF50;
+}
+
+.audio-button.playing:hover {
+    background-color: #45a049;
+}
+
+/* Күнтізбе стилі */
+.calendar {
+    margin: 30px auto;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #b58900;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.calendar-day {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.calendar-date {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.calendar-date.empty {
+    background: transparent;
+}
+
+.calendar-date.highlight {
+    background: #b58900;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    transform: scale(1.2);
+}
+
+/* Кері санақ стилі */
+.countdown {
+    margin: 30px auto;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.countdown h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #b58900;
+    margin-bottom: 15px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.countdown-item {
+    flex: 1;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #b58900;
+}
+
+.countdown-item p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.map {
+    margin: 20px 0;
+}
+
+.map-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b58900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.map-link:hover {
+    background-color: #a67c00;
+}
+
+.rsvp {
+    margin: 20px 0;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #45a049;
+}
+
+.signature {
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #555;
+}
+
+.footer a {
+    color: #b58900;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Мобильді бейімделу */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+
+    .logo-inline {
+        width: 24px;
+        margin-right: 8px;
+    }
+
+    .audio-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .calendar {
+        max-width: 300px;
+    }
+
+    .calendar-header {
+        font-size: 20px;
+    }
+
+    .calendar-day {
+        font-size: 12px;
+    }
+
+    .calendar-date {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .calendar-date.highlight {
+        font-size: 14px;
+    }
+
+    .countdown {
+        max-width: 300px;
+    }
+
+    .countdown h2 {
+        font-size: 18px;
+    }
+
+    .countdown-item span {
+        font-size: 24px;
+    }
+
+    .countdown-item p {
+        font-size: 12px;
+    }
+
+    .map-link, .contact-link {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* Анимациялар үшін қосымша стильдер */
+.animate__fadeInUp {
+    animation-duration: 1s;
+}
